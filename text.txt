@@ -1,0 +1,10 @@
+Anatomical and physiological studies have identified many loops between the cerebral cortex and
+two subcortical structures, the basal ganglia and the cerebellum (Middleton & Strick, 2000; Houk
+2005). These loops, called distributed processing modules (DPMs), have been regarded as the brain’s
+substrate for the planning, initiation and regulation of movement, as well as thought. It is estimated
+that there may be on the order of a hundred DPMs in the human brain that form a large-scale neural
+network. Because they each have strikingly similar neuronal architectures, their signal processing
+operations may be essentially identical. The resultant network of generic DPMs thus provides a
+promising framework for understanding many questions about how the mind thinks and controls
+action. For example, how do we recognize that we are thirsty, look for a glass, fill that glass with
+water, drink the water and thus satisfy our thirst?
