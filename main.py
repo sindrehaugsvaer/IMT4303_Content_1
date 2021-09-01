@@ -47,16 +47,33 @@ oneline = read.replace('\r', '').replace('\n', '')
 print("--- oneline")
 print(oneline)
 
+
 allwords=oneline.split(" ")
 print("--- allwords")
 print(allwords)
 
+nogo = ['']
+for word in list(allwords):  # iterating on a copy since removing will mess things up
+    if word in nogo:
+        allwords.remove(word)
+print("--- allwords no space")
+print(allwords)
+
+allwordsnoduplicate = []
+
+for i in allwords:
+  if i not in allwordsnoduplicate:
+    allwordsnoduplicate.append(i)
+print("--- list of all words, no duplicate:")
+print(allwordsnoduplicate)
 
 #Creating inverted index:
 dict = {}
 for i in range(line):
     check = array[i].lower()
-    for item in allwords:
+    #print("sjekk ",i)
+    #print(array[i].lower())
+    for item in allwordsnoduplicate:
 
         if item in check:
             if item not in dict:
