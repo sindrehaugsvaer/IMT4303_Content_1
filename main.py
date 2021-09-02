@@ -103,20 +103,18 @@ while True:
         and_query = set(inverted_index[First_term]).intersection(
             inverted_index[Second_term])
         and_list = list(and_query)
-        print("Documents with both terms: ")
-        print(and_list)
+        print("Documents with both terms: ", and_list)
 
         or_query = set(inverted_index[First_term]).union(
             inverted_index[Second_term])
         or_list = list(or_query)
-        print("Documents with either term: ")
-        print(or_list)
+        print("Documents with either term: ", or_list)
 
         #NOT query
         #Creating sets to use the difference operator
         set_list_first = set(inverted_index[First_term]) #set of docs where first term is represented
         set_list_second = set(inverted_index[Second_term]) #set of docs where second term is represented
-        set_all = set(all_docs_list) #set of all docs available
+        set_all = set(all_docs_list) #set of all docs available, created above in line 16
         not_query_first = (set_all - set_list_first) #creating a set of all docs where first term is not represented
         not_query_second = (set_all - set_list_second) #creating a set of all docs where first term is not represented
         print("Documents without first term: ", list(not_query_first)) #Printing list
